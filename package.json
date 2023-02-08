@@ -3,10 +3,22 @@
   "version": "1.0.6dao",
   "description": "demo",
   "bin": {
-    "dao": "bin/index.js"
+    "dao": "bin/index.mjs"
   },
-  "main": "index.js",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "create": "esno autoCreateBin.ts",
+    "dev": "esno src/index.ts",
+    "build": "unbuild",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
