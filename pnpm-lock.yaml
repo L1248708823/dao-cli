@@ -58,14 +58,18 @@ importers:
   packages/core:
     specifiers:
       '@packages/utils': workspace:*
+      unbuild: ^1.1.1
     dependencies:
       '@packages/utils': link:../utils
+      unbuild: 1.1.1
 
   packages/utils:
     specifiers:
       dayjs: ^1.11.7
+      unbuild: ^1.1.1
     dependencies:
       dayjs: 1.11.7
+      unbuild: 1.1.1
 
 packages:
 

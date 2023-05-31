@@ -3,7 +3,7 @@
   "version": "1.0.7",
   "description": "demo",
   "bin": {
-    "dao": "bin/index.mjs"
+    "dao": "packages/core/bin/core.mjs"
   },
   "exports": {
     ".": {
@@ -17,8 +17,9 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "create": "esno autoCreateBin.ts",
-    "dev": "esno src/commands/index.ts",
+    "dev": "esno packages/core/src/index.ts",
     "build": "unbuild",
+    "tsc": "tsc", 
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
