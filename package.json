@@ -19,7 +19,7 @@
     "create": "esno autoCreateBin.ts",
     "dev": "esno packages/core/src/index.ts",
     "build": "unbuild",
-    "tsc": "tsc", 
+    "tsc": "tsc",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -55,6 +55,10 @@
     "which": "^3.0.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.26.0"
-  }
+    "@changesets/cli": "^2.26.0",
+    "lerna": "^6.6.2"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
