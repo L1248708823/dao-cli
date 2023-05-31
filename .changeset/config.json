@@ -1,0 +1,14 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
+  "changelog": "@changesets/cli/changelog",
+  "commit": false,
+  "fixed": [],
+  "linked": ["@dao-cli-lpj/*"], // 配置哪些包要共享版本
+  "access": "public",
+  "baseBranch": "master",
+  "updateInternalDependencies": "patch",
+  "ignore": [],
+  "___experimentalUnsafeOptions_WILL_CHANGE_IN_PATCH": {
+    "onlyUpdatePeerDependentsWhenOutOfRange": true
+}
+}
